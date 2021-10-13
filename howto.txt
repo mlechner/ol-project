@@ -1,0 +1,7 @@
+mkdir ol-project
+cd ol-project/
+npx create-ol-app
+git init 
+git add .
+git commit -m "inital commit"
+npm run build
