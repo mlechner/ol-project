@@ -1,5 +1,6 @@
 import './style.css';
 import {Map, View} from 'ol';
+import {fromLonLat} from 'ol/proj';
 import TileLayer from 'ol/layer/Tile';
 import OSM from 'ol/source/OSM';
 
@@ -11,7 +12,7 @@ const map = new Map({
     })
   ],
   view: new View({
-    center: [0, 0],
-    zoom: 2
+    center: fromLonLat([8.4, 49]),
+    zoom: 14
   })
 });
